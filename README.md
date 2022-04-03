@@ -1,4 +1,3 @@
-# curso
 # CURSO POMAR DOMÉSTICO
 
 # Este Site fiz para minha madrinha, onde ela possa estudar e de forma mais correta.
