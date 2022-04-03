@@ -20,8 +20,8 @@
       /* Layout
       -----------------------------*/
       html, body, #home {
-        height: 50%;
-        overflow-x: hidden;
+        height: 100%;
+        overflow-y: hidden;
       }
 
       body {
@@ -35,6 +35,44 @@
       }
       .espaco .espaco2 {
         margin: 80px;
+      }
+
+      /* Estrutura conteúdos
+      -----------------------------*/
+      .caixa {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      #servicos {
+        background: white;
+      }
+
+      #recursos {
+        color: white;
+      }
+
+      #servicos h2, h3 {
+        color: #7c25f8;
+      }
+
+      #recursos h2 {
+        color: white;
+      }
+
+      #recursos h3 {
+        color: #9bf0e1;
+      }
+
+      .albuns {
+        padding: 10px 0;
+      }
+
+      .rotacionar {
+        -ms-transform: rotate(30deg); /* IE 9 */
+          -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
+          transform: rotate(30deg);
+        padding-left: 80px;
       }
       /* Rodapé
       -----------------------------*/
@@ -71,19 +109,14 @@
       iframe {
         box-shadow: 8px 6px 4px rgb(0,0,0,0.6);
       }
-
       /* Extra small devices (portrait phones, less than 576px)*/
       @media (max-width: 575.98px) {
-        /* Espaço */
-        .espaco {
-          margin: 10px;
-        }
-        .espaco .espaco2 {
-          margin: 100px;
-        }
         .btn-custom {
           margin: 10px 15px;
           font-size: 1em;
+        }
+        footer {
+          margin-top: 667px;
         }
       }
 
@@ -95,12 +128,8 @@
         .btn-custom {
           margin: 10px 15px;
         }
-        /* Espaço */
-        .espaco {
-          margin: 10px;
-        }
-        .espaco .espaco2 {
-          margin: 100px;
+        footer {
+          margin-top: 200px;
         }
       }
 
@@ -109,12 +138,8 @@
         h1 {
           font-size: 4em;
         }
-        /* Espaço */
-        .espaco {
-          margin: 10px;
-        }
-        .espaco .espaco2 {
-          margin: 100px;
+        footer {
+          margin-top: 667px;
         }
       }
 
@@ -123,12 +148,8 @@
         h1 {
           font-size: 5em;
         }
-        /* Espaço */
-        .espaco {
-          margin: 10px;
-        }
-        .espaco .espaco2 {
-          margin: 100px;
+        footer {
+          margin-top: 667px;
         }
       }
 
@@ -137,19 +158,15 @@
         h1 {
           font-size: 6em;
         }
-        /* Espaço */
-        .espaco {
-          margin: 0 auto;
-        }
-        .espaco .espaco2 {
-          margin: 80px;
+        footer {
+          margin-top: 667px;
         }
       }
     </style>
   </head>
 
   <body>
-    
+
     <header><!-- inicio Cabecalho -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-5">
         <div class="container">
@@ -171,7 +188,7 @@
       </nav>
     </header>
 
-    <section id="home" class="d-flex"><!--home -->
+    <section id="home" class="d-flex caixa"><!--home -->
       <div class="container align-self-center">
         <div class="row">
           <div class="col-sm">
